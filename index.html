@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人数字化 IP 工作台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="工作台导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">IP</div>
+          <div>
+            <strong>数字化 IP</strong>
+            <span>个人工作台</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <a href="#overview" class="active">总览</a>
+          <a href="#profile">画像</a>
+          <a href="#pipeline">生产</a>
+          <a href="#opensource">开源</a>
+          <a href="#prompt">脚本</a>
+          <a href="#publish">发布</a>
+        </nav>
+        <div class="tool-card">
+          <span class="tool-label">日常后台</span>
+          <a class="tool-link" href="http://127.0.0.1:8787/admin-cn.html" target="_blank" rel="noreferrer">中文后台</a>
+          <span class="tool-label">视频引擎</span>
+          <a class="tool-link" href="http://127.0.0.1:8501" target="_blank" rel="noreferrer">MoneyPrinterTurbo</a>
+        </div>
+      </aside>
+
+      <main>
+        <section id="overview" class="topbar">
+          <div>
+            <p class="eyebrow">Personal IP OS</p>
+            <h1>个人数字化 IP 工作台</h1>
+            <span id="storageMode" class="sync-status">数据层：浏览器本地</span>
+          </div>
+          <div class="top-actions">
+            <button id="resetBtn" class="icon-button" type="button" title="重置数据" aria-label="重置数据">↻</button>
+            <button id="exportBtn" class="button" type="button">导出 JSON</button>
+          </div>
+        </section>
+
+        <section class="metric-grid" aria-label="关键指标">
+          <article class="metric">
+            <span>本周内容</span>
+            <strong id="metricIdeas">0</strong>
+          </article>
+          <article class="metric">
+            <span>制作中</span>
+            <strong id="metricActive">0</strong>
+          </article>
+          <article class="metric">
+            <span>待发布</span>
+            <strong id="metricPublish">0</strong>
+          </article>
+          <article class="metric">
+            <span>IP 清晰度</span>
+            <strong id="metricClarity">0%</strong>
+          </article>
+        </section>
+
+        <section class="workspace-grid">
+          <section id="profile" class="panel profile-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Positioning</p>
+                <h2>IP 画像</h2>
+              </div>
+              <button id="saveProfileBtn" class="button compact" type="button">保存画像</button>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                <span>IP 名称</span>
+                <input id="ipName" type="text" placeholder="例：工程 AI 实战笔记" />
+              </label>
+              <label>
+                <span>领域</span>
+                <input id="ipDomain" type="text" placeholder="例：AI 工具、工程管理、知识视频" />
+              </label>
+              <label>
+                <span>目标人群</span>
+                <input id="audience" type="text" placeholder="例：有技术基础的项目负责人" />
+              </label>
+              <label>
+                <span>核心承诺</span>
+                <input id="promise" type="text" placeholder="例：把复杂工具变成可直接执行的流程" />
+              </label>
+              <label class="wide">
+                <span>内容风格</span>
+                <input id="voiceTone" type="text" placeholder="例：直接、实操、少废话、有证据" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel asset-panel" aria-label="视觉资产">
+            <div class="asset-board">
+              <div class="asset-node node-main">IP</div>
+              <div class="asset-node">选题</div>
+              <div class="asset-node">脚本</div>
+              <div class="asset-node">视频</div>
+              <div class="asset-node">发布</div>
+            </div>
+            <div class="asset-caption">
+              <strong id="assetTitle">未命名 IP</strong>
+              <span id="assetSubtitle">定位、生产、发布集中管理</span>
+            </div>
+          </section>
+        </section>
+
+        <section id="pipeline" class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Pipeline</p>
+              <h2>内容生产看板</h2>
+            </div>
+            <div class="button-row">
+              <button id="ideaBtn" class="button compact" type="button">生成选题</button>
+              <button id="addTaskBtn" class="icon-button" type="button" title="添加任务" aria-label="添加任务">＋</button>
+            </div>
+          </div>
+
+          <div class="kanban" id="kanban"></div>
+        </section>
+
+        <section id="opensource" class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Open Source Stack</p>
+              <h2>开源融合方案</h2>
+            </div>
+            <button id="copyOpsBtn" class="button compact" type="button">复制运营清单</button>
+          </div>
+          <div class="stack-summary" id="stackSummary"></div>
+          <div class="tool-grid" id="openSourceGrid"></div>
+        </section>
+
+        <section class="workspace-grid lower">
+          <section id="prompt" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Script</p>
+                <h2>脚本提示词</h2>
+              </div>
+              <button id="copyPromptBtn" class="icon-button" type="button" title="复制提示词" aria-label="复制提示词">⧉</button>
+            </div>
+            <textarea id="promptBox" spellcheck="false"></textarea>
+          </section>
+
+          <section id="publish" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Calendar</p>
+                <h2>发布排期</h2>
+              </div>
+              <button id="addPublishBtn" class="button compact" type="button">加入排期</button>
+            </div>
+            <div class="publish-list" id="publishList"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <template id="taskTemplate">
+      <article class="task-card">
+        <div>
+          <strong class="task-title"></strong>
+          <span class="task-meta"></span>
+        </div>
+        <select class="task-stage" aria-label="生产阶段"></select>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "source": "pocketbase",
+  "updatedAt": "2026-06-24T03:27:03.209Z",
+  "profile": {
+    "ipName": "个人数字化 IP",
+    "ipDomain": "AI 短视频与个人品牌",
+    "audience": "想用 AI 做内容资产的个人创作者",
+    "promise": "把想法整理成可生产、可发布、可复盘的内容系统",
+    "voiceTone": "直接、实操、案例化、少空话"
+  },
+  "tasks": [
+    {
+      "id": "4hw5kex1p2pgyu7",
+      "title": "用 MoneyPrinterTurbo 生成第一条短视频",
+      "channel": "视频号 / 抖音",
+      "stage": "video"
+    },
+    {
+      "id": "sgio21syy7gacgu",
+      "title": "整理个人 IP 的三类固定栏目",
+      "channel": "公众号 / 即刻",
+      "stage": "script"
+    },
+    {
+      "id": "3e929ez06c61quw",
+      "title": "写一篇部署过程复盘",
+      "channel": "公众号",
+      "stage": "idea"
+    },
+    {
+      "id": "scdbyyskobhlnxt",
+      "title": "梳理开源工具融合路线",
+      "channel": "知识库 / 公众号",
+      "stage": "material"
+    }
+  ],
+  "publish": [
+    {
+      "date": "周一",
+      "title": "AI 工具部署踩坑复盘",
+      "channel": "公众号"
+    },
+    {
+      "date": "周三",
+      "title": "60 秒演示：从选题到短视频",
+      "channel": "视频号"
+    },
+    {
+      "date": "周五",
+      "title": "个人知识库如何变成内容资产",
+      "channel": "小红书"
+    }
+  ]
+}

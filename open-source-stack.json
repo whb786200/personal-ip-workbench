@@ -1,0 +1,100 @@
+[
+  {
+    "name": "MoneyPrinterTurbo",
+    "role": "AI short video generation",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "license": "MIT",
+    "status": "installed"
+  },
+  {
+    "name": "PocketBase",
+    "role": "lightweight content database",
+    "url": "https://github.com/pocketbase/pocketbase",
+    "license": "MIT",
+    "status": "installed"
+  },
+  {
+    "name": "Baserow",
+    "role": "table database alternative",
+    "url": "https://gitlab.com/baserow/baserow",
+    "license": "review required",
+    "status": "planned"
+  },
+  {
+    "name": "Node-RED",
+    "role": "automation alternative",
+    "url": "https://github.com/node-red/node-red",
+    "license": "Apache-2.0",
+    "status": "planned"
+  },
+  {
+    "name": "Flowise",
+    "role": "LLM workflow alternative",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "license": "Apache-2.0",
+    "status": "planned"
+  },
+  {
+    "name": "Memos",
+    "role": "idea capture alternative",
+    "url": "https://github.com/usememos/memos",
+    "license": "MIT",
+    "status": "planned"
+  },
+  {
+    "name": "Karakeep",
+    "role": "bookmark and material library",
+    "url": "https://github.com/karakeep-app/karakeep",
+    "license": "AGPL-3.0",
+    "status": "planned"
+  },
+  {
+    "name": "Mixpost",
+    "role": "social media publishing alternative",
+    "url": "https://github.com/inovector/mixpost",
+    "license": "review required",
+    "status": "planned"
+  },
+  {
+    "name": "Postiz",
+    "role": "social media scheduling",
+    "url": "https://github.com/gitroomhq/postiz-app",
+    "license": "AGPL-3.0",
+    "status": "planned"
+  },
+  {
+    "name": "Activepieces",
+    "role": "automation workflow",
+    "url": "https://github.com/activepieces/activepieces",
+    "license": "MIT",
+    "status": "planned"
+  },
+  {
+    "name": "NocoDB",
+    "role": "content database",
+    "url": "https://github.com/nocodb/nocodb",
+    "license": "review required",
+    "status": "planned"
+  },
+  {
+    "name": "OpenCut",
+    "role": "browser video editing",
+    "url": "https://github.com/OpenCut-app/OpenCut",
+    "license": "MIT",
+    "status": "planned"
+  },
+  {
+    "name": "Docmost",
+    "role": "wiki and SOP",
+    "url": "https://github.com/docmost/docmost",
+    "license": "AGPL-3.0",
+    "status": "planned"
+  },
+  {
+    "name": "Dify",
+    "role": "AI workflow apps",
+    "url": "https://github.com/langgenius/dify",
+    "license": "Dify Open Source License",
+    "status": "planned"
+  }
+]

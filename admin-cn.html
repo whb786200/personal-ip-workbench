@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>中文后台 - 个人数字化 IP 工作台</title>
+    <link rel="stylesheet" href="./admin-cn.css" />
+  </head>
+  <body>
+    <aside class="side">
+      <div class="brand">
+        <strong>中文后台</strong>
+        <span>个人数字化 IP 工作台</span>
+      </div>
+      <nav id="collectionNav"></nav>
+      <a class="native-link" href="http://127.0.0.1:8090/_/" target="_blank" rel="noreferrer">打开 PocketBase 原后台</a>
+      <a class="native-link" href="http://127.0.0.1:8787" target="_blank" rel="noreferrer">返回工作台</a>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div>
+          <p id="collectionHint">选择左侧模块开始管理</p>
+          <h1 id="collectionTitle">内容任务</h1>
+        </div>
+        <div class="actions">
+          <button id="syncStateBtn" type="button">同步到工作台</button>
+          <button id="refreshBtn" type="button">刷新</button>
+          <button id="newBtn" type="button">新增</button>
+        </div>
+      </header>
+
+      <section class="summary" id="summary"></section>
+      <section class="table-wrap">
+        <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <dialog id="recordDialog">
+      <form method="dialog" id="recordForm">
+        <div class="dialog-head">
+          <h2 id="dialogTitle">新增记录</h2>
+          <button class="ghost" value="cancel" type="submit">关闭</button>
+        </div>
+        <div id="formFields" class="form-fields"></div>
+        <div class="dialog-actions">
+          <button class="danger" id="deleteBtn" type="button">删除</button>
+          <button id="saveBtn" value="default" type="submit">保存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./admin-cn.js"></script>
+  </body>
+</html>
