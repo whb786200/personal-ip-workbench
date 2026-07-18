@@ -14,7 +14,7 @@ if (Test-Path -LiteralPath $stage) {
 }
 New-Item -ItemType Directory -Force -Path $stage | Out-Null
 
-$excludeDirs = @(".git", "dist", "local", "tools", "node_modules")
+$excludeDirs = @(".git", "dist", "local", "tools", "node_modules", "external")
 $excludeFiles = @("*.log", "*.tmp", "*.zip")
 
 Get-ChildItem -LiteralPath $workspace -Force | ForEach-Object {
