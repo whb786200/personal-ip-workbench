@@ -3,6 +3,7 @@
 一个本地运行的个人 IP 内容运营工作台，集成：
 
 - 中文后台：管理 IP 画像、内容任务、素材库、发布排期
+- IP 形象生成器：头像、数字分身、表情包提示词
 - 主工作台：总览、看板、提示词、开源工具栈
 - PocketBase：本地 SQLite 数据库和底层 Admin UI
 - MoneyPrinterTurbo 入口：AI 短视频生成系统
@@ -19,6 +20,7 @@ Windows PowerShell：
 打开：
 
 - 中文后台：http://127.0.0.1:8787/admin-cn.html
+- IP 形象生成器：http://127.0.0.1:8787/ip-generator.html
 - 主工作台：http://127.0.0.1:8787
 - MoneyPrinterTurbo：http://127.0.0.1:8501
 

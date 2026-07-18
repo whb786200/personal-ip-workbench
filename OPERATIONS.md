@@ -4,6 +4,7 @@
 
 - 工作台入口：`http://127.0.0.1:8787`
 - 中文后台：`http://127.0.0.1:8787/admin-cn.html`
+- IP 形象生成器：`http://127.0.0.1:8787/ip-generator.html`
 - 本地数据 API：`server.js`
 - 数据文件：`data/workbench-state.json`
 - PocketBase 原生后台：`http://127.0.0.1:8090/_/`（英文，仅用于底层维护）
@@ -15,6 +16,7 @@
 | 模块 | 项目 | 作用 | 当前状态 |
 | --- | --- | --- | --- |
 | 总控台 | 本仓库静态工作台 | IP 画像、内容看板、开源工具入口 | 已完成 |
+| IP 形象生成 | Personal IP Generator | 头像、数字分身、表情包提示词 | 已安装 Skill |
 | AI 视频生成 | MoneyPrinterTurbo | 选题/脚本到短视频 | 已安装运行 |
 | 轻量数据库 | PocketBase | SQLite + Admin UI + REST API | 已安装运行 |
 | 内容数据库 | NocoDB | 选题库、素材库、发布表、复盘表 | 待接入 |

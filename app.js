@@ -13,6 +13,16 @@ const stages = [
 
 const openSourceStack = [
   {
+    name: "Personal IP Generator",
+    role: "IP 形象生成",
+    license: "MIT",
+    status: "已安装 Skill",
+    url: "https://github.com/Gayaya999/personal-ip-generator",
+    local: "http://127.0.0.1:8787/ip-generator.html",
+    command: "$personal-ip-generator",
+    desc: "Codex 个人 IP 生成 Skill，支持头像、数字分身、表情包、五种预设画风和严格向导流程。",
+  },
+  {
     name: "MoneyPrinterTurbo",
     role: "AI 短视频生成",
     license: "MIT",

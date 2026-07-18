@@ -1,5 +1,12 @@
 [
   {
+    "name": "Personal IP Generator",
+    "role": "personal avatar and sticker generator skill",
+    "url": "https://github.com/Gayaya999/personal-ip-generator",
+    "license": "MIT",
+    "status": "installed"
+  },
+  {
     "name": "MoneyPrinterTurbo",
     "role": "AI short video generation",
     "url": "https://github.com/harry0703/MoneyPrinterTurbo",

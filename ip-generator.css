@@ -1,0 +1,165 @@
+:root {
+  --bg: #f6f7f4;
+  --surface: #fff;
+  --ink: #17211c;
+  --muted: #667168;
+  --line: #dbe2da;
+  --teal: #08746f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+}
+
+aside {
+  padding: 22px 16px;
+  border-right: 1px solid var(--line);
+  background: #fbfcf8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside strong,
+aside span {
+  display: block;
+}
+
+aside span,
+header p,
+label,
+.style-card p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+a,
+button {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  min-height: 38px;
+  padding: 9px 12px;
+}
+
+a:hover,
+button:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+main {
+  padding: 28px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  gap: 18px;
+  margin: 22px 0;
+}
+
+.panel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fbfcfb;
+  color: var(--ink);
+  font: inherit;
+}
+
+input,
+select {
+  height: 40px;
+  padding: 0 10px;
+}
+
+textarea {
+  min-height: 120px;
+  padding: 10px;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  min-height: 40px;
+  padding: 0 14px;
+  font-weight: 700;
+}
+
+.style-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.style-card {
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #fbfcfb;
+}
+
+.style-card strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.output textarea {
+  min-height: 380px;
+  line-height: 1.65;
+}
+
+@media (max-width: 920px) {
+  body,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

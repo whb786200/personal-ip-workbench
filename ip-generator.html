@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人 IP 生成器</title>
+    <link rel="stylesheet" href="./ip-generator.css" />
+  </head>
+  <body>
+    <aside>
+      <strong>个人 IP 生成器</strong>
+      <span>基于 Gayaya999/personal-ip-generator</span>
+      <a href="./">返回主工作台</a>
+      <a href="./admin-cn.html">中文后台</a>
+    </aside>
+
+    <main>
+      <header>
+        <p>Personal IP Generator</p>
+        <h1>头像、数字分身、表情包提示词工作台</h1>
+      </header>
+
+      <section class="grid">
+        <form id="generatorForm" class="panel">
+          <label>
+            IP 类型
+            <select name="ipType">
+              <option value="人物 IP">人物 IP：基于授权真人照片或外貌描述</option>
+              <option value="代表形象 IP">代表形象 IP：原创角色代表个人/品牌/团队</option>
+            </select>
+          </label>
+
+          <label>
+            形象来源 / 代表 brief
+            <textarea name="brief" placeholder="例如：工程 AI 工具博主，面向项目负责人，性格直接、可靠，记忆点是安全帽和笔记本。"></textarea>
+          </label>
+
+          <label>
+            画风
+            <select name="stylePreset" id="stylePreset"></select>
+          </label>
+
+          <label>
+            强化特征
+            <input name="traits" placeholder="例如：短发、黑框眼镜、工程夹克、沉稳表情、工具箱" />
+          </label>
+
+          <label>
+            配色方向
+            <input name="palette" placeholder="默认使用画风配色，或写：墨绿、白、橙色点缀" />
+          </label>
+
+          <label>
+            避免元素
+            <input name="avoid" value="不要商标、不要水印、不要文字、不要复制已有角色" />
+          </label>
+
+          <div class="actions">
+            <button type="submit">生成提示词</button>
+            <button id="copyBtn" type="button">复制提示词</button>
+          </div>
+        </form>
+
+        <section class="panel">
+          <h2>预设画风</h2>
+          <div id="styleCards" class="style-list"></div>
+        </section>
+      </section>
+
+      <section class="panel output">
+        <h2>生成计划</h2>
+        <textarea id="promptOutput" spellcheck="false"></textarea>
+      </section>
+    </main>
+
+    <script src="./ip-generator.js"></script>
+  </body>
+</html>
